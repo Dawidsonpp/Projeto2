@@ -1,0 +1,397 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Modern Antiqua", serif;
+  }
+  
+  html,body{
+	height: 100%;
+  }
+  
+  .clear{
+	clear: both;
+  }
+  
+  header{
+	z-index: 1;
+	width: 100%;
+	position: fixed;
+	padding: 20px 0;
+	height: 60px;
+	background: #3A8442;
+  }
+  
+.logo p{
+	color: white;
+	font-size: 20px;
+	text-transform: uppercase;
+	float: left;
+	margin-left: 50px;
+}
+
+  nav ul{
+  float: right;
+	list-style-type: none;
+	padding: 0 20px;
+  }
+  
+  nav ul li{
+	margin: 0 10px;
+	font-size: 16px;
+	text-transform: uppercase;
+	display: inline-block;
+	margin-right: 40px;
+  }
+  
+  nav a{
+	color: white;
+	text-decoration: none;
+  }
+  
+  nav li:first-child a{
+	border-bottom: 2px solid white;
+  }
+
+nav.mobile-menu{
+	cursor: pointer;
+	display: none;
+	width: 32px;
+	height: 32px;
+	background-image: url('../images/menu.png');
+	background-size: 100% 100%;
+}
+
+nav.mobile-menu:hover ul{
+	opacity: 1;
+}
+
+
+nav.mobile-menu ul{
+	display: none;
+	/*transition: 1s;*/
+	background-color: white;
+	position: absolute;
+	width: 100%;
+	left: 0;
+	top: 80px;
+	list-style-type: none;
+	text-align: center;
+}
+
+nav.mobile-menu ul li{
+	padding:8px 0;
+	transition: 0.4s;
+	border-bottom: 2px solid black;
+}
+
+nav.mobile-menu ul li:hover{
+	background-color: rgb(230,230,230);
+}
+
+nav.mobile-menu ul li a{
+	color: #3A8442;
+	display: block;
+	text-decoration: none;
+}
+  
+  section.container{
+  width: 100%;
+	height: 100%;
+	position: relative;
+	top: 60px; /* Ajustar para altura do menu */
+  }
+  
+  .sessao{
+	min-height: 100%;
+	padding: 30px 2%;
+  }
+  
+  section.banner{
+	padding: 0;
+	margin: 0;
+	position: relative;
+	width: 100%;
+  }
+  
+  section.banner img{
+	width: 100%;
+	padding: 20px 2%;
+  }
+  
+  /* Aqui começa o sobre */
+  
+  section.depoimento{
+	width: 100%;
+	flex-direction: column;
+	align-items: center;
+	margin: 10px 0;
+  }
+  
+  .depoimento-thais{
+	width: 50%;
+	float: left;
+	margin-top: 60px;
+	padding: 10px 2%;
+	color: gray;
+	line-height: 1.5;
+	text-align: center;
+  }
+  
+
+  .depoimento-thais h2{
+	font-size: 24px;
+	margin-bottom: 10px;
+  }
+
+  .depoimento-thais p{
+	font-size: 18px;
+  }
+ 
+  
+  .imagem img{
+	width: 50%;
+	height: auto;
+	max-height: 550px;
+	margin-top: 10px;
+  } 
+  
+  section.consulta{
+	width: 100%;
+	height: 100%;
+	position: relative;
+	margin-top: 20px;
+	margin-left: -10px;
+	margin-right: -20px;
+  }
+  
+  section.consulta .video{
+  float: left;
+  position: relative;
+	width: 50%;
+	height: 100%;
+  }
+  
+  section.consulta .texto-consulta{
+ 	float: right;
+ 	position: relative;
+	width: 50%;
+	height: 100%;
+	text-align: center;
+	line-height: 2;
+	color:  gray;
+  }
+
+  .texto-consulta p{
+  	font-size: 18px;
+  }
+	
+	.texto-consulta h2{
+  	text-align: center;
+  	margin-top: 60px;
+	  font-size: 24px;
+	  color:  gray;
+	  margin-bottom: 40px;
+  }
+ 
+  section.equipe{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 60px 2%;
+  width: 80%;
+  position: relative;
+	text-align: center;
+	margin-left: 100px;
+  }
+  
+  .equipe-single{
+	max-width: 1000px;
+	margin-top: 20px;
+	padding: 20px;
+	border: 1px solid #ccc;
+	box-shadow: 8px 7px 5px -3px rgba(20,20,20,0.6);
+	font-size: 18px;
+	color: gray;
+	text-align: center;
+  }
+  
+  .equipe-single p{
+	margin: 10px 2%;
+	line-height: 1.5;
+  }
+  
+  .equipe-single h2{
+	font-size: 24px;
+	margin-top: 15px;
+  }
+ 
+  
+  section.pagamento{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 10px;
+  }
+  
+  .container-pagamento{
+	width: 80%;
+	max-width: 1100px;
+	padding: 20px;
+	text-align: center;
+	line-height: 1.5;
+	font-size: 18px;
+	color:  gray;
+  }
+  
+  section.final-site{
+  	width: 100%;
+  	padding: 20px 2%;
+	  margin-top: 10px;
+  }
+
+  .final-site.container{
+  	width: 90%;
+  }
+  
+  section.final-site .fale-conosco{
+  width: 45%;
+	float: left;
+	margin-top: 20px;
+  }
+
+  section.final-site h2{
+	margin-top: 20px;
+	padding: 10px 2%;
+	background: #3A8442;
+	color: white; 
+	text-align: center;
+  }
+  
+  section.final-site .fale-conosco a{
+	margin: 0 10px;
+  }
+
+  section.final-site .valor-consulta p{
+  width: 45%;
+	max-width: 100%;
+	margin-top: 10px;
+	color: gray;
+	margin: 0 10px;
+  }
+  
+  section.final-site .valor-consulta{
+	float: right;
+	width: 45%;
+	margin-top: 20px;
+  }
+  
+  section.final-site .valor-consulta table{
+	width: 100%;
+	max-width: 100%;
+	margin-top: 30px;
+	color: gray;
+	border-collapse: collapse;
+  }
+
+  footer{
+	text-align: center;
+	padding: 20px 0;
+	background: #3A8442;
+	color: white;
+	position: relative;
+	bottom: 0;
+	width: 100%;
+  }
+  
+  footer p{
+	margin: 0;
+  }
+  
+  /* Responsividade */
+
+  @media screen and (max-width: 1000px){
+
+  nav{
+	display: none;
+  }
+
+  nav.mobile-menu{
+  	display: block;
+  }
+  nav.mobile-menu{
+  	width: 20px;
+  	margin-left: 90%;
+  	margin-top: -10px;
+	 }
+  
+  .logo p{
+	color: white;
+	font-size: 16px;
+	text-transform: uppercase;
+	float: left;
+	margin-left: 15px;
+	margin-top: 10px;
+  }
+
+	.depoimento-thais{
+		margin-top: -50px;
+	  width: 100%;
+	  margin-left: 10px;
+	}
+
+	.sessao img{
+		width: 100%;
+	}
+  
+	.imagem img{
+	  width: 80%;
+	  text-align: center;
+	  margin-left: 50px;
+	  margin-right: -80px;
+	}
+  
+	section.consulta video{
+		float: none;
+	}
+
+	.video{	
+	text-align: center;	
+  width: 100%;
+	height: 100%;
+	
+  }
+
+	section.consulta .video,
+	section.consulta .texto-consulta,
+	section.equipe-single,
+	section.container-pagamento,
+	section.final-site h2,
+	section.final-site .valor-consulta table{
+	  width: 100%;
+	}
+
+  section.final-site  a{
+  width: 20%;
+  display: inline-block;
+  }
+
+	section.equipe{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+  width: 100%;
+  margin-left: -3px;
+  position: relative;
+	text-align: center;
+  }
+
+	section.final-site .fale-conosco,
+	section.final-site .valor-consulta {
+	  float: none; /* Remove o float das seções */
+	  width: 100%; /* Define a largura para ocupar 100% */
+	  margin: 20px 0; /* Adiciona margem superior e inferior */
+	    }
+	  }
+
+}

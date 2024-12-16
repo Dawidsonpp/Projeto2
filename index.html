@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projeto Nutrição</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Modern+Antiqua&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="logo"><p>Projeto Nutrição para Todos</p></div>
+        <nav>
+          <ul>
+            <li><a class="home" href="#home">Home</a></li>
+            <li><a class="sobre" href="#sobre">Sobre</a></li>
+            <li><a class="contato" href="#contato">Contato</a></li>
+          </ul>
+        </nav>
+
+        <nav class="mobile-menu">
+        <ul>
+           <li><a class="home" href="#home">Home</a></li>
+            <li><a class="sobre" href="#sobre">Sobre</a></li>
+            <li><a class="contato" href="#contato">Contato</a></li>
+        </ul>
+        <div class="clear"></div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <section target="home" id="home" class="banner">
+      <div class="container chamada-banner">
+        <div class="sessao">
+          <img src="./images/Nutricao-1.jpg" alt="Imagem de Nutrição">
+        </div>
+      </div>
+    </section><!--section banner-->
+
+    <section target="sobre" id="sobre" class="sessao">
+      <section class="depoimento">
+        <div class="container">
+          <div class="depoimento-thais">
+            <h2>Quem sou eu:</h2>
+              <p>Sou Thaís Cravo, nutricionista especializada em nutrição endócrino metabólica, nutrição funcional, nutrição fitoterápica, nutricionista da equipe profissional de basquete do cruzeiro.<br>
+              <br /></p>
+              <h2>Missão:</h2> <p>promover saúde, qualidade de vida e longevidade para os meus pacientes de forma acessível e prática.</p>
+              <br /><br />
+              <h2>Como funciona:</h2><p>através de empresas parceiras os funcionários e clientes da mesma terão a consulta nutricional de forma on-line.
+            </p>
+          </div>
+          <div class="imagem">
+            <img src="./images/equipe.jpg" alt="Imagem da Equipe">
+          </div>
+          <div class="clear"></div>
+        </div>
+      </section>
+
+      <section class="consulta">
+        <div class="container">
+          <div class="video">
+            <video preload="metadata"  muted autoplay controls>
+              <source src="./images/video.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="texto-consulta">
+            <h2>Como funciona a consulta on-line</h2>
+            <p>Consulta realizada via Google Meet com duração de 60 minutos. Durante a consulta, aplico questionamentos para averiguar sua saúde e sua alimentação.<br /> Não podendo ficar de fora a avaliação física que é de extrema importância para medidas do percentual de gordura e de massa magra.<br /> A dieta fica disponibilizada para o paciente através de um aplicativo.
+              <br>
+              Após esse processo, juntamente com o paciente montamos seu plano alimentar de acordo com sua rotina, hábitos alimentares e objetivos.
+            </p>
+          </div>
+          <div class="clear"></div>
+        </div>
+      </section>
+
+      <section class="equipe">
+        <div class="equipe-single">
+          <h2>Como funciona a parceria com as empresas:</h2>
+          <p>A empresa parceira não terá custo algum, pois os pagamentos são realizados diretamente a nutricionista pelo seu colaborador.
+            <br>
+            É viabilizado um contrato para a empresa parceira para estabelecer os meses de vigência do projeto, para assegurar ambos os envolvidos.
+            <br>
+            O funcionário da empresa parceira então entra em contato com a nutricionista via WhatsApp e realiza a marcação da consulta.</p>
+        </div>
+      </section>
+   
+
+    <section target="contato" id="contato" class="sessao">
+      <section class="pagamento">
+        <div class="container-pagamento">
+          <h2>Pagamento:</h2>
+          <p>Os funcionários ou os clientes da empresa parceira mediante marcação da consulta executam o pagamento.
+            <br>
+            Formas de pagamento: cartão de crédito (parcelamento de até duas vezes), débito ou PIX.
+            <br>
+            O link para pagamento é enviado via WhatsApp, após efetuar o pagamento a consulta é agendada.</p>
+        </div>
+      </section>
+
+      <section class="final-site">
+        <div class="container">
+          <div class="fale-conosco">
+            <h2>Fale conosco</h2>
+            <a href="https://www.instagram.com/thaiscravonutri/" target="_blank"><img src="images/instagram1.png" alt="Instagram"></a>
+            <a href="https://www.linkedin.com/in/thaiscravo/" target="_blank"><img src="images/linkedin.png" alt="Linkedin"></a>
+            <a href="https://wa.me/+5531983034129" target="_blank"><img src="images/whatsapp.png" alt="WhatsApp"></a>
+          </div>
+
+          <div class="valor-consulta">
+            <h2>Valor da consulta Nutricional</h2>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Consulta on-line</th>
+                  <th>R$120,00</th>
+                </tr>
+              </thead>
+            </table>
+            <p>
+              <br />
+              *Cartão de Crédito
+              <br />
+              *Cartão de Débito
+              <br />
+              *Pix
+            </p>
+          </div>
+          <div class="clear"></div> 
+        </div>
+      </section>
+  </main>
+
+  <footer>
+    <p class="text-center">Todos os direitos reservados!</p>
+  </footer>
+
+  <script src="js/jquery.js"></script>
+  <script src="js/functions.js"></script>
+  <script src="js/menu_responsivo.js"></script>
+</body>
+</html>
